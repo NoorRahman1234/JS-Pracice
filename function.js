@@ -52,19 +52,78 @@
 
 
 // Conditions if else
-    let age=18
-    let userage= +prompt("Enter you age")
-    if(userage>=age){
-        console.log("You can drive")
-    }
-     else{
-        console.log("You can not drive")
-    }
+    // let age=18
+    // let userage= +prompt("Enter you age")
+    // if(userage>=age){
+    //     console.log("You can drive")
+    // }
+    //  else{
+    //     console.log("You can not drive")
+    // }
 
 
 // Ternary Operator
 //    userage >= age ? console.log("You can drive"): console.log("Youcan not drive");
 
 
+   // If else Condidion    Date 26/09/25
+let age=18
+    let userage= prompt("Enter your age") 
+    if(userage>=20){
+        console.log("You can drive")
 
+    }else if(userage<=5){
+        console.log(" You cannot drive You are kid")
+    }else if(userage<=10){
+        console.log(" You cannot drive You are not an adult")
+
+    }else if (userage<=19){
+        console.log(" You can only ride bysycle You a Tenager")
+
+    }else{
+        console.log("you need training first")
+    }
+
+
+    // Switch condition 
+  let day = +prompt("Enter a number (1-7) for the day of the week:");
+
+switch(day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid number! Please enter 1–7.");
+}
+
+
+// Optimize code
+
+let day = +prompt("Enter a number from (1-7) for a day of the week:");
+
+let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+if(day >= 1 && day <= 7) {
+  console.log(days[day - 1]);  // -1 because array index starts from 0
+} else {
+  console.log("Invalid number! Please enter 1–7 for a day of the week");
+}
 
