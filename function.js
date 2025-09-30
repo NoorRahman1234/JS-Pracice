@@ -243,3 +243,14 @@
 //     }
 // }
 
+
+///////////////////////////////////////////////////////////////////////////////
+
+// function with parameters
+function add(a, b) {
+    document.writeln(a + b);
+}
+
+// calling function with arguments
+add(5, 10);   // a = 5, b = 10
+add(7, 3); 
