@@ -199,23 +199,47 @@
 // Class Task
 //Print numbers divisible by 3 from 1 to 30
 
-let checkDivisibleBy3 = () => {
-    let limit = +prompt("Enter a number");
+// let checkDivisibleBy3 = () => {
+//     let limit = +prompt("Enter a number");
 
-    for (let i = 1; i <= limit; i++) {
-        if (i % 3 === 0) {
-            document.writeln(i + " is divisible by 3 ✅<br>");
-        } else {
-            document.writeln(i + " is not divisible by 3 ❌<br>");
-        }
-    }
+//     for (let i = 1; i <= limit; i++) {
+//         if (i % 3 === 0) {
+//             document.writeln(i + " is divisible by 3 ✅<br>");
+//         } else {
+//             document.writeln(i + " is not divisible by 3 ❌<br>");
+//         }
+//     }
 
-    // After finishing the loop, check if limit > 30
-    if (limit > 30) {
-        document.writeln("<br>Your number " + limit + " is greater than 30 🚀");
-    }
-};
+//     // After finishing the loop, check if limit > 30
+//     if (limit > 30) {
+//         document.writeln("<br>Your number " + limit + " is greater than 30 🚀");
+//     }
+// };
 
-checkDivisibleBy3();
+// checkDivisibleBy3();
+///////////////////////////////////////////////////////////////////////////////////
+// For loop
+// for (let i = 3; i <= 13; i++) {
+//     document.writeln(i + "<br>");
+// } 
 
+////////////////////////////////////////////////////////////////////////////////////
+// while loop with control
+// let i = 1;
+// while (i <= 10) {   // controlled by condition
+//     document.writeln(i + "<br>");
+//     i++;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////
+ // While Loop withour control
+// let i = 1;
+// while (true) {   // no condition, runs forever
+//     document.writeln(i + "<br>");
+//     i++;
+
+//     if (i > 20) {   // manual break control
+//         break;      // stops loop when i > 20
+//     }
+// }
 
