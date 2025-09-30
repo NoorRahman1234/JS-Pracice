@@ -247,10 +247,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // function with parameters
-function add(a, b) {
-    document.writeln(a + b);
-}
+// function add(a, b) {
+//     document.writeln(a + b);
+// }
 
-// calling function with arguments
-add(5, 10);   // a = 5, b = 10
-add(7, 3); 
+// // calling function with arguments
+// add(5, 10);   // a = 5, b = 10
+// add(7, 3); 
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Do while loop
+
+let i = 1;
+do {
+    document.writeln(i);
+    i++;
+} while (i <= 5);
