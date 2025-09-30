@@ -133,30 +133,89 @@
 
 
 // Date 26 /9/25 Class Task  Vilidation
-    let userInput = prompt("Enter you number")
-    if(isNaN(userInput)){
-    console.log("You entered letter")
-    }else if(isNaN(userInput>0)){
-    console.log("This is a number")
-    }else if(userInput<=33 && userInput>=0){
-        console.log("You are fail")
-    }else if(userInput>33 && userInput<50){
-        console.log("you got D grade")
-    }else if(userInput>=50 && userInput<70){
-        console.log("You got grade B")
-    }else if (userInput>=70 && userInput<90){
-        console.log("You got grade A")
-    }else if(userInput>=90 && userInput<100){
-        console.log("you got grade A+")
-    }else if(userInput<0){
-        console.log(" please Enter positive number")
-    }
-    else if(userInput > 100){
-    console.log("please enter number less than 100")
-       }
-     else{
-    console.log("This is a  number")
+    // let userInput = prompt("Enter you number")
+    // if(isNaN(userInput)){
+    // console.log("You entered letter")
+    // }else if(isNaN(userInput>0)){
+    // console.log("This is a number")
+    // }else if(userInput<=33 && userInput>=0){
+    //     console.log("You are fail")
+    // }else if(userInput>33 && userInput<50){
+    //     console.log("you got D grade")
+    // }else if(userInput>=50 && userInput<70){
+    //     console.log("You got grade B")
+    // }else if (userInput>=70 && userInput<90){
+    //     console.log("You got grade A")
+    // }else if(userInput>=90 && userInput<100){
+    //     console.log("you got grade A+")
+    // }else if(userInput<0){
+    //     console.log(" please Enter positive number")
+    // }
+    // else if(userInput > 100){
+    // console.log("please enter number less than 100")
+    //    }
+    //  else{
+    // console.log("This is a  number")
 
+    // }
+
+
+
+// Class No 10
+// Continue  ,   Break  ,  return 
+
+//Continue
+
+// for ( let i =1; i <=10 ;i++){
+//     if(i === 6){
+//         continue;
+//         }
+//     document.writeln(i)
+// }
+
+// Break
+// for ( let i =1; i <=10 ;i++){
+//     if(i === 6){
+//         continue;
+//         }
+//     document.writeln(i)
+// }
+
+// Break
+// for ( let i =1; i <=10 ;i++){
+//     if(i === 4){
+//         Break;
+//         }
+//     document.writeln(i)
+// }
+
+//return
+// document.writeln(add())
+// function add(){
+//     document.writeln("Add two number")
+//     return(2+2)
+// }
+
+// Class Task
+//Print numbers divisible by 3 from 1 to 30
+
+let checkDivisibleBy3 = () => {
+    let limit = +prompt("Enter a number");
+
+    for (let i = 1; i <= limit; i++) {
+        if (i % 3 === 0) {
+            document.writeln(i + " is divisible by 3 ✅<br>");
+        } else {
+            document.writeln(i + " is not divisible by 3 ❌<br>");
+        }
     }
+
+    // After finishing the loop, check if limit > 30
+    if (limit > 30) {
+        document.writeln("<br>Your number " + limit + " is greater than 30 🚀");
+    }
+};
+
+checkDivisibleBy3();
 
 
