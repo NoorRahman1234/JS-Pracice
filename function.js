@@ -258,8 +258,28 @@
 //////////////////////////////////////////////////////////////////////////////////////
 // Do while loop
 
-let i = 1;
-do {
-    document.writeln(i);
-    i++;
-} while (i <= 5);
+// let i = 1;
+// do {
+//     document.writeln(i);
+//     i++;
+// } while (i <= 5);
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Activity-Based Task: Student Report Generator   
+// Date 1/10/2025
+let std={
+    name:"Noor",
+    age:"22",
+    marks:[60,70,50,80,56,90]
+};
+function calculateAverage(marks){
+    let sum=0;
+    for (let i=0; i<marks; i++){
+        sum +=marks[i];
+    }
+    return marks
+}
+document.writeln(" Name:" , std.name,"<br>" );
+document.writeln(" Age:", std.age ,"<br>");
+document.writeln(" Marks:",calculateAverage(std.marks));
+
