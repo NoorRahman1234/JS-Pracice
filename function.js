@@ -268,18 +268,23 @@
 // Activity-Based Task: Student Report Generator   
 // Date 1/10/2025
 let std={
-    name:"Noor",
-    age:"22",
-    marks:[60,70,50,80,56,90]
+    name:prompt("Enter your Name"),
+    age: prompt("Enter your Age"),
+    marks:[],
+
 };
 function calculateAverage(marks){
+    for (let i=0; i<5; i++){
+         marks[i] = +prompt("Enter your Marks for subjects " +(i)+":");
+    }
     let sum=0;
-    for (let i=0; i<marks; i++){
+    for (let i=0; i<marks.length; i++){
         sum +=marks[i];
     }
-    return marks
+    return sum / marks.length;
 }
-document.writeln(" Name:" , std.name,"<br>" );
-document.writeln(" Age:", std.age ,"<br>");
-document.writeln(" Marks:",calculateAverage(std.marks));
+document.writeln("  <b>Name: &nbsp</b>" , std.name,"<br>" );  //  &nbsp  give space 
+document.writeln(" <b>Age: &nbsp</b>", std.age ,"<br>");
+document.writeln(" <b> Average Marks: &nbsp</b>",calculateAverage(std.marks).toFixed(2));    // to fixed(2) it will give two digit after point
 
+/////////////////////////////////////////////////////
