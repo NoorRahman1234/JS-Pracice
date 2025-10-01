@@ -267,24 +267,64 @@
 
 // Activity-Based Task: Student Report Generator   
 // Date 1/10/2025
-let std={
-    name:prompt("Enter your Name"),
-    age: prompt("Enter your Age"),
-    marks:[],
+// let std={
+//     name:prompt("Enter your Name"),
+//     age: prompt("Enter your Age"),
+//     marks:[],
 
-};
-function calculateAverage(marks){
-    for (let i=0; i<5; i++){
-         marks[i] = +prompt("Enter your Marks for subjects " +(i)+":");
-    }
-    let sum=0;
-    for (let i=0; i<marks.length; i++){
-        sum +=marks[i];
-    }
-    return sum / marks.length;
-}
-document.writeln("  <b>Name: &nbsp</b>" , std.name,"<br>" );  //  &nbsp  give space 
-document.writeln(" <b>Age: &nbsp</b>", std.age ,"<br>");
-document.writeln(" <b> Average Marks: &nbsp</b>",calculateAverage(std.marks).toFixed(2));    // to fixed(2) it will give two digit after point
+// };
+// function calculateAverage(marks){
+//     for (let i=0; i<5; i++){
+//          marks[i] = +prompt("Enter your Marks for subjects " +(i)+":");
+//     }
+//     let sum=0;
+//     for (let i=0; i<marks.length; i++){
+//         sum +=marks[i];
+//     }
+//     return sum / marks.length;
+// }
+// document.writeln("  <b>Name: &nbsp</b>" , std.name,"<br>" );  //  &nbsp  give space 
+// document.writeln(" <b>Age: &nbsp</b>", std.age ,"<br>");
+// document.writeln(" <b> Average Marks: &nbsp</b>",calculateAverage(std.marks).toFixed(2));    // to fixed(2) it will give two digit after point
 
 /////////////////////////////////////////////////////
+
+// Class No 11 
+// Array and Array method.  1 push 2 pop 3 Shift 4 unshift
+//Array and push method or function.
+// let fruit =["Apple", "Mango", "Banana"];
+// console.log(fruit);
+// fruit.push("Pear");                                      // It will add an element to the last in the array
+/////////////////////////////////////////////////////
+// Array pop method 
+// let subjects = ["Math","English","Urdu","Pak Study","Islamiat"];
+// subjects.pop()                                  // it will remove the last element from the array
+// document.writeln(subjects);
+
+///////////////////////////////////////////////////////////////
+// Array shift method 
+// let subjects = ["Math","English","Urdu","Pak Study","Islamiat"];
+// subjects.shift()                                  // it will remove the first element from the array
+// document.writeln(subjects);
+///////////////////////////////////////////////////////////
+// Array unshift method 
+// let subjects = ["Math","English","Urdu","Pak Study","Islamiat"];
+// subjects.unshift("Science")                                  // it will add an element at the begining of an array
+// document.writeln(subjects);
+
+//////////////////////////////////////////////////////
+// Object
+// QNo:5 Create an object car with properties make, model, and year. 
+// Print each property.
+// let car={
+//     Name: "Honda",
+//     model: "23",
+//     seats: "4",
+//     Type: "Small",
+//     year: "2024"
+// }
+// document.writeln(car.Name, "<br>");
+// document.writeln(car.model , "<br>");
+// document.writeln(car.seats , "<br>");
+// document.writeln(car.Type , "<br>");
+// document.writeln(car.year,  "<br>");
