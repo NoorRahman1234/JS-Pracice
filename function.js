@@ -328,3 +328,15 @@
 // document.writeln(car.seats , "<br>");
 // document.writeln(car.Type , "<br>");
 // document.writeln(car.year,  "<br>");
+
+// Date 2/10/2025 
+// ATM Cash Withdrawal
+// If balance >= withdrawal amount allow withdrawal , else show "Insufficient Balance"
+    let Bal= prompt( "Enter Amount ")
+    if(Bal >= 100){
+        document.writeln("Withdrawal amount is allowed Withdrawal")
+    } else {
+        document.writeln("Withdrawal amount is not allowed")
+
+    }
+
