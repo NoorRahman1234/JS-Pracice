@@ -328,15 +328,107 @@
 // document.writeln(car.seats , "<br>");
 // document.writeln(car.Type , "<br>");
 // document.writeln(car.year,  "<br>");
-
+///////////////////////////////////////////////////////////////////////////////////
 // Date 2/10/2025 
 // ATM Cash Withdrawal
 // If balance >= withdrawal amount allow withdrawal , else show "Insufficient Balance"
-    let Bal= prompt( "Enter Amount ")
-    if(Bal >= 100){
-        document.writeln("Withdrawal amount is allowed Withdrawal")
-    } else {
-        document.writeln("Withdrawal amount is not allowed")
+//     let Bal= prompt( "Enter Amount ")
+//     if(Bal >= 100){
+//         document.writeln("Withdrawal amount is allowed Withdrawal")
+//     } else {
+//         document.writeln("Withdrawal amount is not allowed")
 
-    }
+//     }
+///////////////////////////////////////////////////////////////////////////////////
+    // DOM ( Document Object Model) Date 6/10/2025
+  /**
+   Activity-Based Task: Interactive To-Do List
+	Create an interactive to-do list that allows users to add tasks, mark them as completed, and delete tasks.
 
+Steps:
+Create an input field and a button to add tasks.
+Display each task in a list with a "Remove" button.
+When a task is clicked, mark it as completed (toggle the CSS class).
+When the "Remove" button is clicked, remove the task.
+   **/
+      // Create the main div
+    const mainDiv = document.createElement("div");
+    mainDiv.style.width = "400px";
+    mainDiv.style.minHeight = "300px";
+    mainDiv.style.margin = "30px auto";
+    mainDiv.style.border = "3px solid black";
+    mainDiv.style.backgroundColor = "lightblue";
+    mainDiv.style.borderRadius = "10px";
+    mainDiv.style.padding = "20px";
+    mainDiv.style.textAlign = "center";
+    mainDiv.style.boxShadow = "0 0 10px gray";
+
+    // Add heading
+    const title = document.createElement("h2");
+    title.textContent = "My To-Do List";
+    mainDiv.appendChild(title);
+
+    // Create input field
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Enter your marks";
+    input.style.padding = "8px";
+    input.style.width = "200px";
+    input.style.marginRight = "5px";
+    mainDiv.appendChild(input);
+
+    // Create Add button
+    const addBtn = document.createElement("button");
+    addBtn.textContent = "Add Task";
+    addBtn.style.padding = "8px 10px";
+    addBtn.style.cursor = "pointer";
+    mainDiv.appendChild(addBtn);
+
+    // Create list
+    const list = document.createElement("ul");
+    list.style.listStyle = "none";
+    list.style.padding = "0";
+    list.style.marginTop = "20px";
+    mainDiv.appendChild(list);
+
+    // Add div to body
+    document.body.appendChild(mainDiv);
+
+    // Add task functionality
+    addBtn.addEventListener("click", function() {
+      const taskText = input.value.trim();
+      if (taskText === "") return;                      // if condition.
+
+      const li = document.createElement("li");
+      li.textContent = taskText;
+      li.style.backgroundColor = "white";
+      li.style.margin = "5px 0";
+      li.style.padding = "8px";
+      li.style.borderRadius = "5px";
+      li.style.display = "flex";
+      li.style.justifyContent = "space-between";
+      li.style.alignItems = "center";
+      li.style.cursor = "pointer";
+      li.style.boxShadow = "0 0 5px #aaa";
+
+
+      // Create Remove button
+      const removeBtn = document.createElement("button");
+      removeBtn.textContent = "Remove";
+      removeBtn.style.backgroundColor = "red";
+      removeBtn.style.color = "white";
+      removeBtn.style.border = "none";
+      removeBtn.style.padding = "5px 8px";
+      removeBtn.style.borderRadius = "3px";
+      removeBtn.style.cursor = "pointer";
+
+      // Remove task
+      removeBtn.addEventListener("click", function(event) {
+        event.stopPropagation(); // prevents toggling when removing
+        list.removeChild(li);
+      });
+
+      li.appendChild(removeBtn);
+      list.appendChild(li);
+      input.value = "";
+    });
