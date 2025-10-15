@@ -350,8 +350,8 @@ Create an input field and a button to add tasks.
 Display each task in a list with a "Remove" button.
 When a task is clicked, mark it as completed (toggle the CSS class).
 When the "Remove" button is clicked, remove the task.
-   **/
-      // Create the main div
+//    **/
+//       Create the main div
     // const mainDiv = document.createElement("div");
     // mainDiv.style.width = "400px";
     // mainDiv.style.minHeight = "300px";
@@ -363,12 +363,12 @@ When the "Remove" button is clicked, remove the task.
     // mainDiv.style.textAlign = "center";
     // mainDiv.style.boxShadow = "0 0 10px gray";
 
-    // Add heading
+    // // Add heading
     // const title = document.createElement("h2");
     // title.textContent = "My To-Do List";
     // mainDiv.appendChild(title);
 
-    // Create input field
+    // // Create input field
     // const input = document.createElement("input");
     // input.type = "text";
     // input.placeholder = "Enter your marks";
@@ -377,24 +377,24 @@ When the "Remove" button is clicked, remove the task.
     // input.style.marginRight = "5px";
     // mainDiv.appendChild(input);
 
-    // Create Add button
+    // // Create Add button
     // const addBtn = document.createElement("button");
     // addBtn.textContent = "Add Task";
     // addBtn.style.padding = "8px 10px";
     // addBtn.style.cursor = "pointer";
     // mainDiv.appendChild(addBtn);
 
-    // Create list
+    // // Create list
     // const list = document.createElement("ul");
     // list.style.listStyle = "none";
     // list.style.padding = "0";
     // list.style.marginTop = "20px";
     // mainDiv.appendChild(list);
 
-    // Add div to body
+    // // Add div to body
     // document.body.appendChild(mainDiv);
 
-    // Add task functionality
+    // // Add task functionality
     // addBtn.addEventListener("click", function() {
     //   const taskText = input.value.trim();
     //   if (taskText === "") return;                      // if condition.
@@ -412,17 +412,18 @@ When the "Remove" button is clicked, remove the task.
     //   li.style.boxShadow = "0 0 5px #aaa";
 
 
-      // Create Remove button
-      // const removeBtn = document.createElement("button");
-      // removeBtn.textContent = "Remove";
-      // removeBtn.style.backgroundColor = "red";
-      // removeBtn.style.color = "white";
-      // removeBtn.style.border = "none";
-      // removeBtn.style.padding = "5px 8px";
-      // removeBtn.style.borderRadius = "3px";
-      // removeBtn.style.cursor = "pointer";
+    // //   Create Remove button
+    //   const removeBtn = document.createElement("button");
+    //   removeBtn.textContent = "Remove";
+    //   removeBtn.style.backgroundColor = "red";
+    //   removeBtn.style.color = "white";
+    //   removeBtn.style.border = "none";
+    //   removeBtn.style.padding = "5px 8px";
+    //   removeBtn.style.borderRadius = "3px";
+    //   removeBtn.style.cursor = "pointer";
 
-      // Remove task
+
+    // //   Remove task
     //   removeBtn.addEventListener("click", function(event) {
     //     event.stopPropagation(); // prevents toggling when removing
     //     list.removeChild(li);
@@ -433,8 +434,13 @@ When the "Remove" button is clicked, remove the task.
     //   input.value = "";
     // });
 
+   
     //////////////////////////////////////////////////////////////////////////
-    //  API in java Script
+    //  API in java Script  Fetch Api Data
+    //Async and Await + Try and Catch
+    // Try and Catch work like an if esle condition
+    //  if there is not an error in if condition the block of code can be executed 
+    // otherwise the esle block will be exicute 
     // async function getDataFromAPI() {
     //   try {
     //     // Fetch API data
@@ -476,14 +482,66 @@ When the "Remove" button is clicked, remove the task.
     //       row.appendChild(bodyCell);
 
     //       table.appendChild(row);
-    //     });
+    //       });
 
-    //     // Add table to page
-    //     document.body.appendChild(table);
+    //       Add table to page
+    //       document.body.appendChild(table);
 
-    //   } catch (error) {
-    //     console.error("Error fetching data:", error);
+    //      } catch (error) {
+    //      console.error("Error fetching data:", error);
     //   }
     // }
-
     // getDataFromAPI();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+//     // Div
+  
+//     const mainDiv = document.createElement("div");
+//     mainDiv.style.width = "400px";
+//     mainDiv.style.minHeight = "300px";
+//     mainDiv.style.margin = "30px auto";
+//     mainDiv.style.border = "3px solid black";
+//     mainDiv.style.backgroundColor = "lightblue";
+//     mainDiv.style.borderRadius = "10px";
+//     mainDiv.style.padding = "20px";
+//     mainDiv.style.textAlign = "center";
+//     mainDiv.style.boxShadow = "0 0 10px gray";
+//     document.body.appendChild(mainDiv);
+// // heading 
+//     const title = document.createElement("h2");
+//     title.innerText="Get data from Api";
+//     mainDiv.appendChild(title);
+
+// // Input Field 1
+//  const inputfield = document.createElement("input");
+//  inputfield.placeholder="Enter ID No";
+//  inputfield.style.height="20px";
+//  inputfield.style.width="80px";
+//  inputfield.style.borderRadius="5px";
+//  inputfield.style.padding="5px";
+//  inputfield.style.display="flex";
+//  inputfield.style.marginRight="300px";
+//  inputfield.style.marginTop="50px";
+//  mainDiv.appendChild(inputfield);
+
+//  // Input Field 2
+//  const inputfield2 = document.createElement("input");
+//  inputfield2.placeholder="Enter your Name";
+//  inputfield2.style.height="20px";
+//  inputfield2.style.width="80px";
+//  inputfield2.style.display="flex";
+//  inputfield2.style.borderRadius="5px";
+//  inputfield2.style.padding="5px";
+//   inputfield2.style.marginRight="50px";
+//  inputfield2.style.marginTop="-102px";
+//  mainDiv.appendChild(inputfield2);
+/////////////////////////////////////////////////////////////////////////////
+
+
+// Import and Export from one file to another file
+// function MyDisplayer(){
+//  console.log("export from function.js file to script.js file"); 
+// }
+// export default MyDisplayer;
+export const add = (a,b)=> a+b;
